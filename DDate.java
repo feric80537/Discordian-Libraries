@@ -1,4 +1,4 @@
-package com.frandson.ddate;
+package com.wilsonrowe.ddate;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -63,9 +63,7 @@ public class DDate {
 		// Leap Year Calculations
 		GregorianCalendar gCal = new GregorianCalendar();
 	gCal.set(gYear, gMonth - 1, gDay);
-//		gCal.set(2011,8, 22);
 		gYday = gCal.get(Calendar.DAY_OF_YEAR);
-//		gYday = 234;
 		System.out.println("gDay:" + gDay + " gMonth: " + gMonth + " gYear" + gYear + " gYday: " + gYday);
 		if(isLeap(gYear)){
 			if(gYday >= 61){
